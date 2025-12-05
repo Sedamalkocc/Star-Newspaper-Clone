@@ -24,3 +24,37 @@
   height: auto;
   display: block;
 }
+
+/* Tablet ve altı */
+@media (max-width: 991px) {
+  .ads-wrapper {
+    padding: 16px 0;
+  }
+
+  .ads-inner img {
+    max-width: 98%;
+  }
+}
+
+/* Mobil */
+@media (max-width: 576px) {
+  .ads-wrapper {
+    padding: 12px 0;
+  }
+
+  .ads-inner {
+    padding: 0 8px;
+  }
+
+  .ads-inner img {
+    max-width: 100%;
+    border-radius: 6px;
+  }
+}
+
+/* Büyük ekran (1600px+) */
+@media (min-width: 1600px) {
+  .ads-inner img {
+    max-width: 90%;
+  }
+}

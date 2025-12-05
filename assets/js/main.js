@@ -8,34 +8,55 @@ $(document).ready(function () {
   }
 
   $slider.slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2500,
-  arrows: true,
-  centerMode: false,
-  adaptiveHeight: false,
-  infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    arrows: true, 
+    infinite: true,
     speed: 700,
     cssEase: 'linear',
-
     pauseOnHover: false,
     pauseOnFocus: false,
     draggable: true,
     swipe: true,
+    touchMove: true,
 
     responsive: [
-      { breakpoint: 992, settings: { slidesToShow: 2, slidesToScroll: 2 } },
-      { breakpoint: 576, settings: { slidesToShow: 1, slidesToScroll: 1 } }
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: true  
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true
+        }
+      }
     ]
   });
 
   $slider.slick('slickPlay');
 
+  $slider.on('touchstart', function () {
+    $slider.slick('slickPause');
+  });
+
+  $slider.on('touchend', function () {
+    $slider.slick('slickPlay');
+  });
+
 });
 
 
-$('.headline-thumb').on('mouseenter', function () {
+
+$('.headline-thumb').on('mouseenter click', function () {
 
   const img = $(this).attr('data-img');
   const title = $(this).attr('data-title');
