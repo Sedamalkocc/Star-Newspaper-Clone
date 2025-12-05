@@ -1,0 +1,78 @@
+.site-header {
+  font-family: Poppins, sans-serif;
+}
+
+.header-top {
+  padding: 20px 0;
+}
+
+.header-weather {
+  font-size: 14px;
+}
+.header-weather span {
+  font-weight: 700;
+}
+.header-weather .desc {
+  font-size: 12px;
+  color: #666;
+}
+
+.header-logo img {
+  width: 140px;
+}
+
+.header-date {
+  font-size: 12px;
+  color: #555;
+}
+
+.header-mode {
+  font-size: 12px;
+}
+
+.mode-btn {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.header-bar {
+  background: #000;
+  color: #fff;
+  padding: 8px 0;
+  font-size: 13px;
+}
+.header-bar span {
+  margin-right: 15px;
+}
+
+.header-actions a {
+  color: #fff;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.header-nav {
+  border-bottom: 1px solid #eee;
+}
+.header-nav ul {
+  display: flex;
+  gap: 25px;
+  padding: 15px 0;
+  margin: 0;
+  list-style: none;
+}
+.header-nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 14px;
+}
+.header-nav a:hover {
+  color: red;
+}
+.header-nav .active a {
+  color: red;
+}/*# sourceMappingURL=main.css.map */

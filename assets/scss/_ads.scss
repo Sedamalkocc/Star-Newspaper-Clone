@@ -1,0 +1,26 @@
+/* ============================= */
+/* ✅ REKLAM ALANI */
+/* ============================= */
+
+.ads-wrapper {
+  width: 100%;
+  background: #fff;
+  padding: 20px 0;
+}
+
+.ads-wrapper .row {
+  margin: 0;
+}
+
+.ads-inner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ads-inner img {
+  max-width: 96%;
+  height: auto;
+  display: block;
+}
